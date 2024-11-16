@@ -78,6 +78,7 @@ def train(args):
                         save_models(e, step=i)
 
             # Save model every `save_freq` epochs
+            save_freq = 5
             if (e + 1) % args.save_freq == 0:
                 save_models(e, step=len(dataloader))
 
